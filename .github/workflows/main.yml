@@ -15,7 +15,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
@@ -26,6 +26,6 @@ jobs:
       uses: katalon-studio/katalon-studio-github-action@0.9
       with:
         # katalon parameter
-        ks_command: -runMode=console -browserType=Firefox (headless) -retry=0 -statusDelay=15 -testSuitePath=Test Suites/PlatformStorefront
+        ks_command: -browserType=Firefox -retry=0 -statusDelay=15 -testSuitePath=Test Suites/PlatformStorefront
         # api key
         ks_api_key: f3138932-4e9b-43eb-9ed8-d87ecad3a0dd
