@@ -26,6 +26,6 @@ jobs:
       uses: katalon-studio/katalon-studio-github-action@0.9
       with:
         # katalon parameter
-        ks_command: -browserType=Firefox -retry=0 -statusDelay=15 -testSuitePath='Test Suites/PlatformStorefront'
+        ks_command: 'katalon-execute.sh -browserType="Firefox" -retry=0 -statusDelay=15 -testSuitePath="Test Suites/PlatformStorefront"'
         # api key
         ks_api_key: f3138932-4e9b-43eb-9ed8-d87ecad3a0dd
